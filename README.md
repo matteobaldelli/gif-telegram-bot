@@ -14,25 +14,19 @@ To run this project you must have installed these programs:
 
 ### Installing and serve
 
-```
-git clone https://github.com/matteobaldelli/gif-telegram-bot.git
-cd gif-telegram-bot
-pipenv install
-```
-
-Create a .env file in root folder project and add the following:
+Create a .env file in project folder and add the following:
 
 ```
 TELEGRAM_TOKEN="TOKEN-TELEGRAM-BOT"
 HOST_URL="URL-FOR-WEBHOOK"
 DATABASE_URL="postgresql://localhost/test"
+```
+after create a .env file go to the console
 
 ```
-after create a .env file go back to the console
-
-```
-pipenv run python manage.py db upgrade
-pipenv run python app.py
+$ pipenv install
+$ pipenv run python manage.py db upgrade
+$ pipenv run python app.py
 ```
 
 ## Built With
